@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Location from './Location';
+import Button from './Button';
+import Record from './Record';
 import './App.css';
-
-// Button
-//  className
-//  onClick
-
-// Record
-//  lord  = { name, planet }
-//  className    
 
 class App extends Component {
   constructor() { 
@@ -50,14 +43,11 @@ class App extends Component {
                 <h3>Kas'im</h3>
                 <h6>Homeworld: Nal Hutta</h6>
               </li>
-              <li className="css-slot">
-                <h3>Darth Bane</h3>
-                <h6>Homeworld: Apatros</h6>
-              </li>
+              <Record className="css-slot" lord={{ name: 'Test', homeworld: 'test'}} />
             </ul>
             <div className="css-scroll-buttons">
-              <button className="css-button-up" />
-              <button className="css-button-down" />
+              <Button className="css-button-up" />
+              <Button className="css-button-down" />
             </div>
           </section>
         </div>
